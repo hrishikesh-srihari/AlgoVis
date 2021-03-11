@@ -11,7 +11,7 @@
   <title>AlgoVis</title>
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/mdb.min.css" />
   <script defer type="text/javascript" src="script/mdb.min.js"></script>
   <script defer type="text/javascript" src="script/node.js"></script>
@@ -34,50 +34,36 @@
 </head>
 
 <body>
-  <!-- Tabs navs -->
   <ul class="nav nav-tabs nav-justified " id="tabs" role="tablist">
     <li class="nav-item" role="presentation">
-      <a class="nav-link" id="topological-sort" data-toggle="tab" href="#topological-sort-tab" role="tab"
-        aria-controls="ex3-tabs-1" aria-selected="false"></a>
+      <a class="nav-link" id="topological-sort" data-toggle="tab" href="#path-finder-tab" role="tab"
+        aria-controls="ex3-tabs-1" aria-selected="false"> <br/> </a>
     </li>
     <li class="nav-item" role="presentation">
       <a class="nav-link active" id="path-finder" data-toggle="tab" href="#path-finder-tab" role="tab"
         aria-controls="ex3-tabs-2" aria-selected="true">Path finding Algorithms</a>
     </li>
     <li class="nav-item" role="presentation">
-      <a class="nav-link" id="minimum-spanning-tree" data-toggle="tab" href="#minimum-spanning-tree-tab" role="tab"
-        aria-controls="ex3-tabs-3" aria-selected="false">  </a>
+      <a class="nav-link" id="minimum-spanning-tree" data-toggle="tab" href="#path-finder-tab" role="tab"
+        aria-controls="ex3-tabs-3" aria-selected="false"> <br/> </a>
     </li>
 
   </ul>
-  <!-- Tabs navs -->
 
-  <!-- Tabs content -->
   <div class="tab-content" id="ex2-content">
     <div class="tab-pane fade show active" id="path-finder-tab" role="tabpanel" aria-labelledby="ex3-tab-1">
       <header>
         <nav class="buttons-container navbar navbar-expand-lg navbar-dark bg-dark">
-          <!-- Container wrapper -->
           <div class="container-fluid">
-            <!-- Navbar brand -->
             <a class="navbar-brand">Path-Finding Algorithms</a>
-            <!-- Toggle button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon" id="breakpoint-toggler"></span>
             </button>
 
-            <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <!-- Left links -->
               <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <!-- <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li> -->
-                  <!-- Navbar dropdown -->
                   <div class="btn-group shadow-5">
                     <button type="button" class="btn btn-outline-info mr-2 dropdown-toggle mt-2"
                       data-ripple-color="dark" id="path-finding-grp-btn" data-toggle="dropdown" aria-expanded="false">
@@ -89,7 +75,6 @@
                       <li><a class="dropdown-item" id="dijkstra">Dijkstra using UCS</a></li>
                       <li><a class="dropdown-item" id="bidirectional-bfs">Bidirectional Breadth-First Search</a></li>
                       <li><a class="dropdown-item" id="bidirectional-dijkstra">Bidirectional Dijkstra using UCS</a></li>
-                      <!-- <li><hr class="dropdown-divider" /></li> -->
                       <li><a class="dropdown-item" id="astar">A* using Manhattan Distance</a></li>
                       <li><a class="dropdown-item" id="greedybest">Greedy Best-first using Manhattan Distance</a></li>
                       <li><a class="dropdown-item" id="bidirectional-astar">Bidirectional A*</a></li>
@@ -106,7 +91,6 @@
                       <li><a class="dropdown-item" id="maze-recursive-backtracker">Recursive Backtracker (real-time)</a>
                       </li>
                       <li><a class="dropdown-item" id="maze-prim">Prim's Algorithm (real-time)</a></li>
-                      <!-- <li><hr class="dropdown-divider" /></li> -->
                       <li><a class="dropdown-item" id="maze-animation-recursive-backtracker">Animated Recurisve
                           Backtracker</a></li>
                       <li><a class="dropdown-item" id="maze-prim-animation">Animated Prim's Algorithm</a></li>
@@ -137,9 +121,7 @@
                 <input name="grid-size" type="range" class="form-range" id="size-slider" value="28" min="19" max="90" />
               </li>
             </div>
-            <!-- Collapsible wrapper -->
           </div>
-          <!-- Container wrapper -->
         </nav>
       </header>
       <main>
@@ -216,10 +198,6 @@
     <div class="toast-header bg-info text-white">
       <i class="fas fa-info-circle fa-lg mr-2"></i>
       <strong class="mr-auto">Path-Finder</strong>
-      <!-- <button type="button" class="ml-2 my-1 close text-white" data-dismiss="toast"
-              aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button> -->
     </div>
     <div class="toast-body">
       <b><u>Click/Hover</u></b> on icons to see <u><b>Shortcuts</u></b>
@@ -229,10 +207,6 @@
     data-autohide="false">
     <div class="toast-header bg-danger text-white">
       <i class="fas fa-exclamation-triangle fa-lg mr-2"></i>
-      <!-- <button type="button" class="ml-2 my-1 close text-white" data-dismiss="toast"
-              aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button> -->
     </div>
     <div class="toast-body">
     </div>
@@ -241,10 +215,6 @@
     data-autohide="false" data-content="11000">
     <div class="toast-header bg-info text-white">
       <i class="fas fa-info-circle fa-lg mr-2"></i>
-      <!-- <button type="button" class="ml-2 my-1 close text-white" data-dismiss="toast"
-              aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button> -->
     </div>
     <div class="toast-body">
       Uses <b><u>Prim's Algorithm</u></b> for MST and <u><em><b>Euclidean Distance</b></em></u> for <b>weights</b>
@@ -263,7 +233,6 @@
       You can <b><u>Drag</u></b> <b>Start</b> or <b>End</b> to see how path is affected in realtime
     </div>
   </div>
-  <!-- Danger toast -->
   <div id="fail-toast" class="toast bg-danger text-white" data-autohide="false" role="alert" aria-live="assertive"
     aria-atomic="true">
     <div class="toast-header bg-danger text-white">
