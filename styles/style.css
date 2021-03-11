@@ -5,8 +5,12 @@ body{
   overflow-x: hidden;
 }
 button{
+  box-sizing: border-box;
+}
+.navbar-brand{
   box-sizing: border-box;;
 }
+
 canvas{
   border: 2px solid black;
 }
