@@ -66,7 +66,7 @@
                 <li class="nav-item">
                   <div class="btn-group shadow-5">
                     <button type="button" class="btn btn-outline-info mr-2 dropdown-toggle mt-2"
-                      data-ripple-color="dark" id="path-finding-grp-btn" data-toggle="dropdown" aria-expanded="false">
+                      data-ripple-color="danger" id="path-finding-grp-btn" data-toggle="dropdown" aria-expanded="false">
                       Path Finding Algorithms
                     </button>
                     <ul class="dropdown-menu">
@@ -83,41 +83,41 @@
                     </ul>
                   </div>
                   <div class="btn-group shadow-0">
-                    <button type="button" class="btn btn-outline-info mr-2 dropdown-toggle mt-2" data-toggle="dropdown"
+                    <button type="button" class="btn btn-outline-info mr-2 dropdown-toggle mt-2" data-ripple-color="danger" data-toggle="dropdown"
                       id="maze-generation-grp-btn" aria-expanded="false">
                       Random Maze Generation Algorithms
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" id="maze-recursive-backtracker">Recursive Backtracker (real-time)</a>
+                      <li><a class="dropdown-item" id="maze-recursive-backtracker">Recursive Backtracker in real-time</a>
                       </li>
-                      <li><a class="dropdown-item" id="maze-prim">Prim's Algorithm (real-time)</a></li>
+                      <li><a class="dropdown-item" id="maze-prim">Prim's Algorithm in real-time</a></li>
                       <li><a class="dropdown-item" id="maze-animation-recursive-backtracker">Animated Recurisve
                           Backtracker</a></li>
                       <li><a class="dropdown-item" id="maze-prim-animation">Animated Prim's Algorithm</a></li>
                     </ul>
                   </div>
                 <li class="nav-item">
-                  <button disabled type="button" class="btn btn-outline-danger mr-2 ml-1 mt-2" data-ripple-color="light"
+                  <button disabled type="button" class="btn btn-outline-danger mr-2 ml-1 mt-2" data-ripple-color="info"
                     id="visualize">
                     Visualize
                   </button>
                 </li>
                 <li class="nav-item">
-                  <button id="clear-path" disabled type="button" class="btn btn-outline-warning mr-2 ml-1 mt-2"
-                    data-ripple-color="light">
+                  <button id="clear-path" disabled type="button" class="btn btn-outline-info mr-2 ml-1 mt-2"
+                    data-ripple-color="danger">
                     Clear Path
                   </button>
                 </li>
                 <li class="nav-item">
-                  <button id="clear" disabled type="button" class="btn btn-outline-warning mr-2 ml-1 mt-2"
-                    data-ripple-color="light">
+                  <button id="clear" disabled type="button" class="btn btn-outline-info mr-2 ml-1 mt-2"
+                    data-ripple-color="danger">
                     Clear All
                   </button>
                 </li>
               </ul>
 
               <li class="nav-item">
-                <label class="text-warning" for="grid-size"> Node Size: </label>
+                <label class="text-info" for="grid-size"> Node Size: </label>
                 <input name="grid-size" type="range" class="form-range" id="size-slider" value="28" min="19" max="90" />
               </li>
             </div>
