@@ -34,7 +34,7 @@ svg{
   line-height: 1;
 }
 .node{
-  border:1px solid rgba(0,190,218,0.75);
+  border:1px solid #00AFB9;
   box-sizing:border-box;
   display:inline-block;
   vertical-align: top;
@@ -78,7 +78,7 @@ svg{
   }
   100% {
     transform: scale(1);
-    border:1px solid rgba(0,190,218,0.75);
+    border:1px solid #00AFB9;
   }
 
 }
@@ -109,7 +109,7 @@ svg{
 @keyframes check{
   0%  {
     transform: scale(.3) rotate(30);
-    background-color: rgba(17,104,217,0.75);
+    background-color: #00858c;
     opacity: 0.75;
     border:0;
   }
@@ -122,19 +122,19 @@ svg{
   50%  {
     opacity:1;
     transform:scale(1.2) rotate(180);
-    background-color: rgba(0,190,218,0.75);
+    background-color: #00AFB9;
     transform: rotate(90);
   }
 
   75%  {
-    background-color:rgba(17,104,217,0.75);
+    background-color:#00858c;
     border:0;
   }
 
   100%  {
     transform: scale(1.0) rotate(360);
     border:0;
-    background-color: rgba(0,190,218,0.75);
+    background-color: #00AFB9;
   }
 }
 
@@ -154,7 +154,7 @@ svg{
   50%  {
     opacity:1;
     transform:scale(1.2) rotate(180);
-    background-color: #13EBA2;
+    background-color: #18c496;
     transform: rotate(90);
   }
 
@@ -166,27 +166,27 @@ svg{
   100%  {
     transform: scale(1.0) rotate(360);
     border:0;
-    background-color: #13EBA2;
+    background-color: #18c496;
   }
 }
 .node-check{
-  background-color: rgba(0,190,218,0.75);
+  background-color: #00AFB9;
   border:1px solid rgba(207,221,239,0.65);
   animation: check 1s ease-in-out 0s, pulse 1s ease-in-out 14s 3;
 }
 
 .node-check-backward{
-  background-color: #13EBA2;
+  background-color: #18c496;
   border:1px solid rgba(207,221,239,0.65);
   animation: check-backward 1s ease-in-out 0s, pulse-backward 1s ease-in-out 14s 3;
 }
 
 .node-check-rt{
-  background-color: rgba(0,190,218,0.75);
+  background-color: #00AFB9;
   border:1px solid rgba(207,221,239,0.65);
 }
 .node-check-rt-backward{
-  background-color: #13EBA2;
+  background-color: #18c496;
   border:1px solid rgba(207,221,239,0.65);
 }
 .node-backtrack{
@@ -198,27 +198,27 @@ svg{
 
 @keyframes backtrack{
   0%  {
-    background-color:rgba(50, 168, 82,0.75);
+    background-color:#29c46c;
   }
 
   75%  {
-    background-color: rgba(17,104,217,0.75);
+    background-color: #00858c;
   }
   100%  {
-  background-color: rgba(0,190,218,0.75);
+  background-color: #00AFB9;
   }
 }
 @keyframes fadein {
   from {
     transform: scale(1);
-    background-color: #ffd400;
+    background-color: #F07167;
     opacity: 1;
     border-radius: 100%;
     border:0;
   }
   to {
     transform: scale(0.4);
-    background-color: rgba(17,104,217,0.75);
+    background-color: #00858c;
     opacity: 0.75;
     border-radius: 100%;
   }
@@ -227,7 +227,7 @@ svg{
 @keyframes fadein-backward {
   from {
     transform: scale(1);
-    background-color: #ffd400;
+    background-color: #F07167;
     opacity: 1;
     border-radius: 100%;
     border:0;
@@ -241,25 +241,25 @@ svg{
 }
 @keyframes pulse{
   0% {
-    background-color: rgba(0,190,218,0.75);
+    background-color: #00AFB9;
   }
   50% {
-    background-color: rgba(17,104,217,0.75);
+    background-color: #00858c;
   }
   100% {
-    background-color: rgba(0,190,218,0.75);
+    background-color: #00AFB9;
   }
 }
 
 @keyframes pulse-backward{
   0% {
-    background-color: #13EBA2;
+    background-color: #18c496;
   }
   50% {
   background-color: #05AC72;
   }
   100% {
-    background-color: #13EBA2;
+    background-color: #18c496;
   }
 }
 
@@ -281,32 +281,32 @@ svg{
 }
 
 .node-path{
-  background-color:#ffd400 ;
+  background-color:#F07167 ;
   animation: wall 0.3s ease-in-out 0s, path-pulse 1s ease-in-out 10s 10;
   border:0;
 }
 .node-path-rt{
-  background-color:#ffd400 ;
+  background-color:#F07167 ;
   border:0;
 }
 
 @keyframes path-pulse{
   0% {
-    background-color: #ffd400;
+    background-color: #F07167;
   }
   50% {
-    background-color: #eba400;
+    background-color: #eb4e42;
   }
   100% {
-    background-color: #ffd400;
+    background-color: #F07167;
   }
 }
 .node-intersection{
-  background-color: #eba400 !important;
+  background-color: #eb4e42 !important;
 }
 
 .node-child{
-  background-color:purple;
+  background-color:rgb(155, 39, 200);
 }
 
 .node-strong-1{
@@ -382,6 +382,7 @@ svg{
 #wall-node{
   width:28px;
   height:28px;
+  border-radius: 5px;
   background-color:#1e2431;
   box-sizing: border-box;
 }
@@ -395,6 +396,7 @@ svg{
 #weight-node{
   width:28px;
   height:28px;
+  border-radius: 5px;
   border-width: 3px;
   border-style: solid;
   border-color:#1e2431;
@@ -403,31 +405,37 @@ svg{
 #unvisited-node{
   width:28px;
   height:28px;
-  border:3px solid rgba(0,190,218,0.75);
+  border-radius: 5px;
+  border:3px solid #00AFB9;
 }
 
 #current-node{
   width:28px;
   height:28px;
-  background-color: #ffd400;
+  background-color: #F07167;
   border-radius: 100%;
 
 }
 #visited-node-forward{
   width:28px;
   height:28px;
-  background-color: rgba(0,190,218,0.75);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #00AFB9;
 }
 #visited-node-backward{
   width:28px;
   height:28px;
-  background-color: #13EBA2;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #18c496;
 }
 
 #visited-node-backtrack{
   width:28px;
   height:28px;
-  background-color:rgba(50, 168, 82,0.75);
+  border-radius: 5px;
+  background-color:#29c46c;
 }
 .helper-node-container{
   display:flex;
@@ -461,19 +469,21 @@ svg{
 }
 
 .nav-tabs .nav-link{
-    color: rgb(239, 188, 5) !important;
-    background-color: #262727 !important;
+    color: #F07167 !important;
+    background-color: #F07167 !important;
     border-bottom-width: 5px !important;
+    border-color:#0b89b3 !important;
 }
 .nav-link:hover{
 
     color: #262727 !important;
-    background-color: rgb(239, 188, 5) !important;
+    background-color: #F07167 !important;
+    border-color:#0b89b3 !important;
 }
 
 .nav-link.active{
 
     color: #262727 !important;
-    background-color: rgb(239, 188, 5) !important;
+    background-color: #F07167 !important;
     border-color:#0b89b3 !important;
 }
